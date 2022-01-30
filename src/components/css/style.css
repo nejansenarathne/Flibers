@@ -338,3 +338,19 @@ a{
 .accountPage button:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+/*About us page*/
+.aboutPage{
+    text-align: center;
+    margin: 50px;
+}
+.aboutPage h1{
+    font-size: 50px;
+}
+.aboutPage img{
+    width: 500px;
+}
+.aboutPage p{
+    margin: 20px 300px;
+    font-size: 20px;
+}
