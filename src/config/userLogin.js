@@ -6,7 +6,8 @@ const auth = getAuth(firebase)//getting auth from module
 const provider = new GoogleAuthProvider()//defining google as provider 
 let logged = false
 
-const signInWithGoogle = () => {
+const signInWithGoogle = (e) => {
+    e.preventDefault();
     signInWithPopup(auth,provider)//implementing popup
     .then((result) => {//adding data to variables
 

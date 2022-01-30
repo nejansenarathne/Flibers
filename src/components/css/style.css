@@ -169,6 +169,7 @@ a{
 }
 .detailBlogBlock h1{
     font-size: 45px;
+    margin-bottom: 30px;
 }
 .detailBlogBlock i{
     margin: 5px 30px ;
@@ -179,7 +180,6 @@ a{
     text-align: center;
     transition: 0.2s;
     cursor: pointer;
-    
 }
 .likeCliked{
     color: rgb(67, 105, 175);
@@ -188,10 +188,9 @@ a{
 }
 .detailBlogBlock i:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
 }
 .detailBlogBlock p{
-    margin: 10px 200px;
+    margin: 30px 350px;
     font-size: 20px;
 }
 .commentSection{
@@ -251,6 +250,8 @@ a{
     border-radius: 5px;
     resize: vertical;
     padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
 }
 
 .contactBlock button{
@@ -264,7 +265,10 @@ a{
     transition: 0.5s;
     margin-top: 10px;
 }
-
+.contactBlock .loginBtn{
+    color: white;
+    background-color: rgb(74, 124, 199);
+}
 .contactBlock button:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }

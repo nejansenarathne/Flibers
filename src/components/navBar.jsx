@@ -40,10 +40,10 @@ const NavBar = () => {
         <div className='navigationSection'>
             <div className='topNav'>
                 <p className="navDate">{day}</p>
-                {logged === 'true' ? <p className="navUser">Welcome, <strong>{name} </strong> </p> : <button className='loginNavBtn' onClick={signInWithGoogle}>Login</button>}
+                {logged === 'true' ? <p className="navUser">Welcome, <strong><a href="/account">{name}</a>  </strong> </p> : <button className='loginNavBtn' onClick={signInWithGoogle}>Login</button>}
             </div>
             <div className="midNav">
-                <a href="#"><img className="navLogo" src={Logo}  alt="Logo"  /></a>
+                <a href="/"><img className="navLogo" src={Logo}  alt="Logo"  /></a>
                 <div className="navTitleDiv">
                     <h1 className="navTitle">Flip Blogs</h1>
                 </div>
