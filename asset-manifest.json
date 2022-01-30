@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/FlipBLogs.com/static/css/main.7a3dd42b.css",
-    "main.js": "/FlipBLogs.com/static/js/main.b876b2f4.js",
+    "main.js": "/FlipBLogs.com/static/js/main.7ca69d95.js",
     "static/media/about.gif": "/FlipBLogs.com/static/media/about.c9a88b5a2e8d1c0a93bb.gif",
     "static/media/loading.gif": "/FlipBLogs.com/static/media/loading.7f686c03a467bef7dac6.gif",
     "static/media/logo.png": "/FlipBLogs.com/static/media/logo.94a91349690b941ee35f.png",
     "index.html": "/FlipBLogs.com/index.html",
     "main.7a3dd42b.css.map": "/FlipBLogs.com/static/css/main.7a3dd42b.css.map",
-    "main.b876b2f4.js.map": "/FlipBLogs.com/static/js/main.b876b2f4.js.map"
+    "main.7ca69d95.js.map": "/FlipBLogs.com/static/js/main.7ca69d95.js.map"
   },
   "entrypoints": [
     "static/css/main.7a3dd42b.css",
-    "static/js/main.b876b2f4.js"
+    "static/js/main.7ca69d95.js"
   ]
 }
