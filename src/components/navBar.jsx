@@ -50,9 +50,9 @@ const NavBar = () => {
             </div>
             <div className='navTags'>
                 <a href="/">Home</a>
-                <a href="/FlipBLogs.com/about">About</a>
-                <a href="/FlipBLogs.com/contact">Contact</a>
-                <a href="/FlipBLogs.com/account">Account</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+                <a href="/account">Account</a>
             </div>
             <div className="bannerNav">
                 <p className='navQuot'>
