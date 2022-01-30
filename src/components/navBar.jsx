@@ -43,16 +43,16 @@ const NavBar = () => {
                 {logged === 'true' ? <p className="navUser">Welcome, <strong><a href="/account">{name}</a>  </strong> </p> : <button className='loginNavBtn' onClick={signInWithGoogle}>Login</button>}
             </div>
             <div className="midNav">
-                <a href="/"><img className="navLogo" src={Logo}  alt="Logo"  /></a>
+                <a href="/FlipBLogs.com/"><img className="navLogo" src={Logo}  alt="Logo"  /></a>
                 <div className="navTitleDiv">
                     <h1 className="navTitle">Flip Blogs</h1>
                 </div>
             </div>
             <div className='navTags'>
                 <a href="/">Home</a>
-                <a href="/about">About</a>
-                <a href="/contact">Contact</a>
-                <a href="/account">Account</a>
+                <a href="/FlipBLogs.com/about">About</a>
+                <a href="/FlipBLogs.com/contact">Contact</a>
+                <a href="/FlipBLogs.com/account">Account</a>
             </div>
             <div className="bannerNav">
                 <p className='navQuot'>

@@ -15,11 +15,11 @@ const App = () => {
             <NavBar />
             <Router>
                 <Routes>
-                    <Route path="/" element={<HomeBlog />} />
-                    <Route path="/about" element={<AboutBlock />} />
-                    <Route path="/blogDetails/:key" element={<BlogDetails />}/>
-                    <Route path="/contact" element={<ContactBlock />} />
-                    <Route path="/account" element={<AccountPage />} />
+                    <Route path="/FlipBLogs.com/" element={<HomeBlog />} />
+                    <Route path="/FlipBLogs.com/about" element={<AboutBlock />} />
+                    <Route path="/FlipBLogs.com/blogDetails/:key" element={<BlogDetails />}/>
+                    <Route path="/FlipBLogs.com/contact" element={<ContactBlock />} />
+                    <Route path="/FlipBLogs.com/account" element={<AccountPage />} />
                     <Route path="*" element={<ErrorPage />}/>
                 </Routes>
             </Router>
