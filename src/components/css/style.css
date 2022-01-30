@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.loading{
+    text-align: center;
+}
+/* Navigation Bar */
+.navigationSection{
+    background-color: bisque;
+}
+.topNav{
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 100px;
+    border-bottom: 1px solid black;
+    background-color: rgb(236, 251, 253);
+}
+.navDate, .navUser{
+    padding-top: 7px;
+}
+.loginNavBtn{
+    padding: 7px 20px;
+    background-color: rgb(74, 124, 199);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+.loginNavBtn:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.midNav{
+    background-color: rgb(186, 238, 253);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+.navLogo{
+    width: 150px;
+}
+.navTitle{
+    font-size: 35px;
+    padding-top: 40px;
+    margin-left: 35px;
+}
+.navTags{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 150px;
+    background-color: azure;
+    font-weight: bold;
+}
+.navTags a{
+    color: rgb(86, 57, 122);
+    text-decoration: none;
+    transition: 0.2s;
+}
+.navTags a:hover{
+    color: rgba(90, 92, 214, 0.589);
+}
+.bannerNav{
+    background-color: rgba(219, 250, 245, 0.705);
+    text-align: center;
+    padding: 50px 100px;
+}
+.navQuot{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.quot{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    font-size: 30px;
+    color: chocolate;
+}
+
+@media screen and (max-width: 800px) {
+    .topNav{
+        padding: 5px;
+    }
+    .navLogo{
+        width: 100px;
+    }
+    .navTitle{
+        padding-top: 20px;
+        font-size: 30px;
+    }
+    .bannerNav{
+        padding: 35px 50px;
+    }
+    .navTags{
+    padding: 10px 50px;
+
+    }
+}
+
+/*Home page*/
+.homeBlogSection{
+    padding-top: 10px;
+    text-align: center;
+}
+.homeBlogTitle{
+    padding: 15px 0;
+}
+.blogCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.blogCard{
+    background-color: #c9d1d165;
+    margin: 20px 40px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.blogCard:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.blogCardText{
+    padding: 20px 0;
+}
+.blogCardText h3{
+    padding-bottom: 5px;
+}
+.blogCard img{
+    width: 300px;
+}
+
+@media screen and (max-width: 800px) {
+    .blogCard img{
+        width: 400px;
+    }
+    .blogCards{
+        margin: 0 10px;
+    }
+}
+
+.errorPage{
+    text-align: center;
+    margin: 100px;
+    margin-bottom: 135px;
+}
+
+.num404{
+    font-size: 100px;
+}
+
+/**Blog details section*/
+.detailBlogBlock{
+    text-align: center;
+    margin: 25px 0;
+    margin-bottom: 100px;
+}
+.detailBlogBlock img{
+    width: 500px;
+    margin: 20px 0;
+}
+.detailBlogBlock h1{
+    font-size: 45px;
+}
+.detailBlogBlock i{
+    margin: 5px 30px ;
+    background-color: rgba(211, 223, 224, 0.459);
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 25px;
+    text-align: center;
+    transition: 0.2s;
+    cursor: pointer;
+    
+}
+.likeCliked{
+    color: rgb(67, 105, 175);
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.detailBlogBlock i:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.detailBlogBlock p{
+    margin: 10px 200px;
+    font-size: 20px;
+}
+.commentSection{
+    margin-top: 50px;
+}
+.commentSection input{
+    margin-top: 15px;
+    padding: 10px 5px;
+    width: 500px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-right: 5px;
+}
+.commentSection input:focus{
+    outline: none;
+}
+.commentSection button{
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: rgb(189, 238, 192);
+    border-radius: 5px;
+    border: none;
+}
+.commentSection .commentLog{
+    background-color: rgb(164, 218, 240);
+}
+.commentSection button:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+@media screen and (max-width: 800px) {
+    .detailBlogBlock img{
+        width: 400px;
+    }
+    .detailBlogBlock p{
+        margin: 10px 20px;
+    }
+    .commentSection input{
+        width: 350px;
+    }
+}
+
+/**contact page*/
+.contactBlock{
+    text-align: center;
+    margin: 35px;
+}
+
+.contactBlock h1{
+    margin-bottom: 40px;
+}
+
+.contactBlock textarea{
+    width: 600px;
+    height: 150px;
+    border-radius: 5px;
+    resize: vertical;
+    padding: 10px;
+}
+
+.contactBlock button{
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    color: white;
+    background-color: rgb(62, 145, 67);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 10px;
+}
+
+.contactBlock button:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+@media screen and (max-width: 800px) {
+    .contactBlock textarea{
+        width: 400px;
+    }
+}
+
+/*footer*/
+.footer{
+    text-align: center;
+    background-color: rgb(247, 247, 247);
+    margin-top: 30px;
+}
+.footerContent{
+    padding: 50px 0;
+}
+.footerContent .logos a{
+    margin: 15px;
+    font-size: 25px;
+}
+.footerContent .logos a:hover{
+    color: rgb(82, 20, 97);
+}
+.footerContent .navLinkFooter{
+    margin: 15px 0;
+}
+.footerContent .navLinkFooter a{
+    margin: 0 10px;
+    font-size: 16px;
+}
+.footerContent .navLinkFooter a:hover{
+    color: rgb(82, 20, 97);
+}
+.footerContent p{
+    margin-top: 20px;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.726);
+}
+.footerContent p span{
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.726);
+}
+/*Account page*/
+.accountPage{
+    text-align: center;
+    margin: 50px 0;
+}
+.accountPage h1{
+    margin: 10px 0;
+}
+.accountPage img{
+    margin: 20px;
+    width: 100px;
+}
+.accountPage h2{
+    color: rgba(0, 0, 0, 0.404);
+}
+.accountPage button{
+    margin: 50px 0;
+    font-size: 25px;
+    border: none;
+    color: white;
+    background-color: rgb(74, 124, 199);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 20px 50px;
+}
+.accountPage button:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
