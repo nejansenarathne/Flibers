@@ -1,9 +1,6 @@
 import React , {useEffect , useState} from 'react'
 import './css/style.css'
 import Logo from '../img/logo.png'
-// import { firebase, db } from "../config/firebase";
-// import {getAuth, GoogleAuthProvider, signInWithPopup} from "firebase/auth";
-// import { doc, setDoc } from "firebase/firestore";
 import signInWithGoogle from '../config/userLogin'
 
 const NavBar = () => {
@@ -34,7 +31,16 @@ const NavBar = () => {
         )
     }
     window.onload = radomQuot
-   
+    let isAdmin = false
+    
+    useEffect(() => {
+        if (email === "nejansenarathne@gmail.com") {
+            isAdmin = true
+        }
+        if (isAdmin) {
+            // alert(`Welcome Admin - ${name}`)
+        }
+    },[])
 
     return ( 
         <div className='navigationSection'>

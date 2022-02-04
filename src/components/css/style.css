@@ -12,6 +12,9 @@ a{
 .loading{
     text-align: center;
 }
+p{
+    line-height: 27px;
+}
 /* Navigation Bar */
 .navigationSection{
     background-color: bisque;
@@ -357,4 +360,12 @@ a{
 .aboutPage p{
     margin: 20px 300px;
     font-size: 20px;
+}
+@media screen and (max-width: 800px) {
+    .aboutPage img{
+        width: 300px;
+    }
+    .aboutPage p{
+        margin: 0;
+    }
 }

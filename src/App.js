@@ -8,6 +8,7 @@ import BlogDetails from './components/blogDetails';
 import ContactBlock from './components/contactPage';
 import Footer from './components/footer';
 import AccountPage from './components/accountPage';
+import AdminHome from './components/admin/adminHome';
 
 const App = () => {
     return ( 
@@ -21,6 +22,7 @@ const App = () => {
                     <Route path="/contact" element={<ContactBlock />} />
                     <Route path="/account" element={<AccountPage />} />
                     <Route path="*" element={<ErrorPage />}/>
+                    {/* <Route path="/admin" element={<AdminHome />}/> */}
                 </Routes>
             </Router>
             <Footer />

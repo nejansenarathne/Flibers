@@ -16,13 +16,14 @@ const ContactBlock = () => {
         }else{
             e.preventDefault();
             document.getElementById('msgText').value = ""
-            alert("Sumited")
             const msgRef = doc(db, 'contact', email)
             setDoc(msgRef , {
                 name: name,
                 email: email,
                 message: message
             })
+            .then((e) => {alert("Thank you for your feedback")})
+            .catch((e) => {console.log(e);})
         }
     }
 
