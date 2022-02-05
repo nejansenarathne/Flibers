@@ -2,7 +2,7 @@ import React from 'react';
 import HomeBlog from './components/homeBlogs';
 import AboutBlock from './components/aboutPage';
 import NavBar from './components/navBar';
-import {BrowserRouter as Router, Routes, Route, useHistory } from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import ErrorPage from './components/errorPage';
 import BlogDetails from './components/blogDetails';
 import ContactBlock from './components/contactPage';
@@ -22,7 +22,7 @@ const App = () => {
                     <Route path="/contact" element={<ContactBlock />} />
                     <Route path="/account" element={<AccountPage />} />
                     <Route path="*" element={<ErrorPage />}/>
-                    {/* <Route path="/admin" element={<AdminHome />}/> */}
+                    {/* <Route path="/admin/:uname" element={<AdminHome />}/> */}
                 </Routes>
             </Router>
             <Footer />
