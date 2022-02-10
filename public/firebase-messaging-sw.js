@@ -5,13 +5,13 @@ import { firebase } from '../src/config/firebase'
 
 const messaging = firebase.messaging();
 
-messaging.onBackgroundMessage(function(payload) {
+messaging.setBackgroundMessageHandler(function(payload) {
     console.log("Received background message ", payload)
 
-    const otificationTtile = payload.notification.title
+    const notificationTitle = payload.notification.title
     const notificationOption = {
         body: payload.notification.body
     }
 
-    self.ServiceWorkerRegistration.showNotification(notificationTitle, notificationOption)
+    return self.ServiceWorkerRegistration.showNotification(notificationTitle, notificationOption)
 })

@@ -26,6 +26,7 @@ const App = () => {
                     <Route path="/account" element={<AccountPage />} />
                     <Route path="*" element={<ErrorPage />}/>
                     <Route path="/adminNotification" element={<NotificationPage />}/>
+                    <Route path="/admin/:username" element={<AdminHome />} />
                 </Routes>
             </Router>
             <Footer />

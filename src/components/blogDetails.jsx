@@ -25,6 +25,7 @@ const BlogDetails = () => {
 
     return ( 
         <div className='detailBlogBlock'>
+            
             {isPending && <img className='loading' src={loadingImg} alt="" />}
             
             {/* {JSON.stringify(detailBlog)} */}
