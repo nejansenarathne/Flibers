@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 *{
     margin: 0;
     padding: 0;
 }
 body{
-    font-family: Arial;
+    font-family: 'Open Sans', sans-serif;
 }
 a{
     color: black;
@@ -80,10 +82,10 @@ p{
 }
 .navQuot{
     font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Times New Roman', Times, serif; */
 }
 .quot{
-    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Times New Roman', Times, serif; */
     padding: 10px;
     font-size: 30px;
     color: chocolate;
@@ -368,4 +370,33 @@ p{
     .aboutPage p{
         margin: 0;
     }
+}
+
+/*Notification page*/
+.notificationPage{
+    text-align: center;
+    margin: 50px;
+}
+.notificationPage h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.notificationPage input{
+    margin: 10px 0;
+    width: 500px;
+    height: 30px;
+    padding: 10px;
+    font-size: 17px;
+}
+.notificationPage button{
+    padding: 10px 40px;
+    font-size: 17px;
+    border: none;
+    background-color: rgb(173, 216, 160);
+    color: #1b611e;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.notificationPage button:hover{
+    background-color: rgba(173, 216, 160, 0.76);
 }

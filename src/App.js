@@ -9,6 +9,8 @@ import ContactBlock from './components/contactPage';
 import Footer from './components/footer';
 import AccountPage from './components/accountPage';
 import AdminHome from './components/admin/adminHome';
+import LoginPage from './components/loginPage';
+import NotificationPage from './config/notification';
 
 const App = () => {
     return ( 
@@ -17,12 +19,13 @@ const App = () => {
             <Router>
                 <Routes>
                     <Route path="/" element={<HomeBlog />} />
+                    <Route path="/login" element={<LoginPage />} />
                     <Route path="/about" element={<AboutBlock />} />
                     <Route path="/blogDetails/:key" element={<BlogDetails />}/>
                     <Route path="/contact" element={<ContactBlock />} />
                     <Route path="/account" element={<AccountPage />} />
                     <Route path="*" element={<ErrorPage />}/>
-                    {/* <Route path="/admin/:uname" element={<AdminHome />}/> */}
+                    <Route path="/adminNotification" element={<NotificationPage />}/>
                 </Routes>
             </Router>
             <Footer />
