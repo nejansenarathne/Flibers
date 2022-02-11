@@ -1,50 +1,34 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
 import './css/style.css'
+import AdminNav from './parts/navBar';
 
 const AdminHome = () => {
     const {urlUname} = useParams() 
     return ( 
         <div>
-  {/* <!---Side navigation bar--> */}
-  <div class="sidebar">
-    <div class="logo-details">
-      <i class='bx bxl-c-plus-plus'></i>
-      {/* <!--Logo--> */}
-      <span class="logo_name">Flibers</span>
-    </div>
-      <ul class="nav-links">
-        {/* <!---Side navigation items--> */}
-        <li>
-          <a href="#" class="active">
-            <i class='bx bx-grid-alt' ></i>
-            <span class="links_name">Dashboard</span>
-          </a>
-        </li>
+            {/* <!---Side navigation bar--> */}
+            <div class="sidebar">
+                <div class="logo-details">
+                <i class='bx bxl-c-plus-plus'></i>
+                {/* <!--Logo--> */}
+                <span class="logo_name">Flibers</span>
+                </div>
+                <ul class="nav-links">
+                    {/* <!---Side navigation items--> */}
+                    <li>
+                    <a href="#" class="active">
+                        <i class='bx bx-grid-alt' ></i>
+                        <span class="links_name">Dashboard</span>
+                    </a>
+                    </li>
 
-      </ul>
-  </div>
+                </ul>
+            </div>
 
 
   <section class="home-section">
-
-    {/* <!---home page top navigation--> */}
-    <nav>
-      <div class="sidebar-button">
-        <i class='bx bx-menu sidebarBtn'></i>
-        <span class="dashboard">Dashboard</span>
-      </div>
-      {/* <!---search bar--> */}
-      <div class="search-box">
-        <input type="text" placeholder="Search..." />
-        <i class='bx bx-search' ></i>
-      </div>
-      {/* <!--profile card--> */}
-      <div class="profile-details">
-        <img src="https://i.pinimg.com/564x/9a/9f/7d/9a9f7d7b1f02d7a2007f9e48c26a232b.jpg" alt="" />
-        <span class="admin_name">Nejan Senarathne</span>
-      </div>
-    </nav>
+      <AdminNav />
 
     <div class="home-content">
       <div class="overview-boxes">

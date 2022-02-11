@@ -1,9 +1,9 @@
 import React , { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import {db} from '../config/firebase'
+import {db} from '../../config/firebase'
 import {doc, getDoc} from 'firebase/firestore'
 import { useState } from 'react/cjs/react.development';
-import signInWithGoogle from '../config/userLogin'
+import signInWithGoogle from '../../config/userLogin'
 import loadingImg from '../img/loading.gif'
 
 const BlogDetails = () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import signInWithGoogle from '../config/userLogin'
+import signInWithGoogle from '../../config/userLogin'
 
 const logged = localStorage.getItem("logged")
 const name = localStorage.getItem("name")

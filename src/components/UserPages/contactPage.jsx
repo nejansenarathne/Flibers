@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import {db} from '../config/firebase'
+import {db} from '../../config/firebase'
 import { doc, setDoc } from "firebase/firestore";
-import signInWithGoogle from '../config/userLogin'
+import signInWithGoogle from '../../config/userLogin'
 
 const ContactBlock = () => {
 
